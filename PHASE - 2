@@ -1,0 +1,21 @@
+PHASE - 2 
+Installed Backup role AD Backup
+Scheduled Server full  backup once every day 9.00 am to separate sata drive
+-------------------------------------------------------------------------
+
+DC02 (Backup Domain Controller)
+DC2 promoted as backup domain controller for DC1
+IP: 192.168.10.20
+  
+Setup Done
+  1.	Install Windows Server
+  2.	Set static IP
+  3.	Join domain
+  4.	Install AD DS
+  5.	Promote as Additional Domain Controller
+  6.	Verify replication (AD, DNS, SYSVOL)
+
+To check DC02 Successfully configured 
+Repadmin /replsummary
+Repadmin /showrepl
+Dcdiag /test:dns
