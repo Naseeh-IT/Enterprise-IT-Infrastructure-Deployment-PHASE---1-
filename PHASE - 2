@@ -14,8 +14,10 @@ Setup Done
   4.	Install AD DS
   5.	Promote as Additional Domain Controller
   6.	Verify replication (AD, DNS, SYSVOL)
+-------------------------------------------------------------------------
 
 To check DC02 Successfully configured 
-Repadmin /replsummary
-Repadmin /showrepl
-Dcdiag /test:dns
+
+1 - Repadmin /replsummary
+2 - Repadmin /showrepl
+3 - Dcdiag /test:dns
