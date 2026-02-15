@@ -20,3 +20,71 @@ Permissions:
 - NTFS and Share permissions set per folder
 - AD Groups created for each department (e.g., HR Users, Accounts Users)
 - Drives mapped via Group Policy with item-level targeting
+---------------------------------------------------------------------------------------------------------
+in Detail
+--------------------------------------------------------------------------------------------------------
+PHASE - 3: File Server Setup
+
+----------------------------------------
+
+Configured FS01 as a File Server on a Host-Only Network.
+
+IP Address: 192.168.10.20
+
+Configuration Steps:
+
+Installed Windows Server.
+
+Joined the domain.
+
+Added File Server role.
+
+Created department folders:
+
+------------------------------------
+
+HR
+
+Accounts
+
+Sales
+
+Procurement
+
+Logistics
+
+Warehouse
+
+Public
+
+----------------------------------------------------------------------------
+
+- Set NTFS permissions to control access at the file system level.
+
+- Configured Share permissions for network access.
+
+- Created Active Directory groups (e.g., HR Users, Accounts Users) for   permission management.
+
+- Mapped network drives using Group Policy with item-level targeting for 
+
+precise access control.
+
+------------------------------------------------------------------------------
+
+Folder Sharing Structure Example
+
+-----------------------------------------------------------
+
+- HR Department folder: Accessible and listable by all HR group users.
+
+Inside HR folder: Individual user folders (e.g., Arun Kumar) where users   cannot delete the folder but can delete items inside.
+
+- Common file sharing folder: Accessible only to HR group users for sharing files.
+
+- IT Admins have full control to delete files, while users cannot delete files in the common folder.
+
+- All department groups have access and write permissions as appropriate.
+
+*** 
+
+This setup ensures secure, organized, and efficient file sharing across departments, with tailored permissions to meet organizational needs.
