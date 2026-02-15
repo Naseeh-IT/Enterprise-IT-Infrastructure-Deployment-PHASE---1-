@@ -1,0 +1,22 @@
+FS01 (File Server) - IP: 192.168.10.20
+
+Folders:
+├── HR
+│   ├── [All HR Users: List Only Access]
+│   ├── Arun Kumar (User Folder)
+│   │   ├── User can delete items inside but not the folder itself
+│   └── Common File Sharing Folder
+│       ├── HR Group: Access & Write
+│       ├── IT Admin: Full control including delete
+│       └── Other Departments: Access & Write
+├── Accounts
+├── Sales
+├── Procurement
+├── Logistics
+├── Warehouse
+└── Public
+
+Permissions:
+- NTFS and Share permissions set per folder
+- AD Groups created for each department (e.g., HR Users, Accounts Users)
+- Drives mapped via Group Policy with item-level targeting
